@@ -1,0 +1,24 @@
+{
+  "assets": [
+    {
+      "name": "moonlit-forest",
+      "kind": "background",
+      "prompt": "Mysterious moonlit forest, volumetric mist, cinematic environment art",
+      "style": "moody blue lighting, high detail",
+      "checkpoint": "YOUR_INSTALLED_CHECKPOINT.safetensors",
+      "width": 768,
+      "height": 768,
+      "seed": 42
+    },
+    {
+      "name": "ancient-sword",
+      "kind": "prop",
+      "prompt": "Ancient fantasy sword, centered, plain studio background",
+      "style": "high-detail concept art",
+      "checkpoint": "YOUR_INSTALLED_CHECKPOINT.safetensors",
+      "width": 768,
+      "height": 768,
+      "seed": 43
+    }
+  ]
+}
