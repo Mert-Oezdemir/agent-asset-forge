@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-asset-forge"
+version = "0.1.0"
+description = "Local-first ComfyUI image asset generation with MCP tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.9,<3"]
+
+[project.scripts]
+assetforge = "assetforge.cli:main"
+assetforge-mcp = "assetforge.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+assetforge = ["workflows/*.json"]
