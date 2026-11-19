@@ -2,9 +2,9 @@
 
 **Local-first AI image asset generation for coding agents.** Use a running ComfyUI installation to create 2D game/web assets, save them with metadata, import licensed assets, package a reusable library and expose tools to AI agents through MCP.
 
-[Turkce kurulum rehberi](docs/README.tr.md)
+[Turkce kurulum rehberi](docs/README.tr.md) · [NEO Windows devam rehberi](docs/NEO-NEXT-STEPS.tr.md)
 
-> v0.1.0 starter kit. Ten offline tests passed on a checked-out copy from GitHub. Real image generation requires a local ComfyUI server and a compatible installed checkpoint; live image generation has not been tested.
+> v0.1.0 starter kit. The 10 offline unit tests passed. A real 512×512 SD1.5 image was generated successfully on a Windows NVIDIA RTX 3080 Ti PC using ComfyUI 0.46.0 and Asset Forge. SDXL, CUDA 13, video and 3D workflows have **not** been validated on that PC.
 
 ## Features
 
@@ -94,6 +94,12 @@ Example instruction for a coding agent: "Generate a forest background using my i
     python -m unittest discover -s tests -v
 
 GitHub Actions runs the offline tests on Python 3.10, 3.12 and 3.13. These tests use a fake ComfyUI backend. Running and visually reviewing real model outputs requires your own local setup.
+
+## Quality presets and Windows diagnostics
+
+- [SDXL-ready 1024px manifest](examples/sdxl-quality-manifest.json) — requires your own licensed SDXL checkpoint; not downloaded automatically.
+- [NEO system status test](scripts/neo-status.ps1) — checks the Python/CUDA environment and ComfyUI API.
+- [Optional CUDA 13 updater](scripts/neo-upgrade-cuda13.ps1) — defaults to dry run. A manual opt-in is required, and the change is not yet validated on the PC.
 
 ## Security
 
