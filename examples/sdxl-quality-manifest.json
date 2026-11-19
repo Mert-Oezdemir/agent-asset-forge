@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "name": "cinematic-forest",
+      "kind": "background",
+      "prompt": "ancient fantasy forest level environment, wide establishing composition, natural foliage, detailed stone ruins, atmospheric depth, physically plausible light, no text",
+      "style": "premium cinematic concept art, cohesive art direction, physically based materials, nuanced colors, volumetric golden sunlight",
+      "negative_prompt": "watermark, text, logo, extra limbs, bad perspective, blurry, low resolution, distorted geometry",
+      "checkpoint": "REPLACE_WITH_YOUR_SDXL_BASE_CHECKPOINT.safetensors",
+      "width": 1024,
+      "height": 1024,
+      "steps": 30,
+      "cfg": 6.5,
+      "seed": 20261119
+    },
+    {
+      "name": "fantasy-prop-sword",
+      "kind": "prop",
+      "prompt": "single ornate fantasy longsword, full sword visible including handle and blade, centered orthographic product composition, neutral plain gray background",
+      "style": "consistent polished realistic game concept art, finely detailed metal, refined silhouette",
+      "negative_prompt": "cropped object, hands, people, watermark, multiple swords, text, blurry",
+      "checkpoint": "REPLACE_WITH_YOUR_SDXL_BASE_CHECKPOINT.safetensors",
+      "width": 1024,
+      "height": 1024,
+      "steps": 30,
+      "cfg": 6.5,
+      "seed": 20261120
+    }
+  ]
+}
