@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "assetforge": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "-m",
+        "assetforge.mcp_server"
+      ],
+      "env": {
+        "ASSETFORGE_COMFY_URL": "http://127.0.0.1:8188",
+        "ASSETFORGE_LIBRARY": "${workspaceFolder}/assets"
+      }
+    }
+  }
+}
